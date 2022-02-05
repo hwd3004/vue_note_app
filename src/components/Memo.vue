@@ -31,6 +31,10 @@ export default {
 
       const content = prompt("내용 입력 : ");
 
+      if (!content) {
+        return add();
+      }
+
       axios.post("/api/memos", { content }).then((res) => {
         console.log(`post result : ${res.data}`);
         state.data = res.data;
