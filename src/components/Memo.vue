@@ -1,4 +1,3 @@
-import { reactive } from '@vue/reactivity';
 <template>
   <div class="memo">
     <div class="act">
